@@ -1,0 +1,8 @@
+{
+  "slug": "second-post",
+  "title": "Second Post: Automation in Action",
+  "summary": "See how new articles are loaded automatically on the homepage.",
+  "body": "<p>Every article you add appears on the homepage automatically. The JavaScript fetches all <code>.json</code> files in <code>content/articles/</code> and displays them as cards.</p>",
+  "images": ["image-01.jpg"],
+  "date": "2025-06-21"
+}
