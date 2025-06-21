@@ -1,7 +1,7 @@
 {
   "slug": "article-01",
-  "title": "Lorem Ipsum Dolor",
-  "summary": "An introduction to Lorem Ipsum and its use as placeholder text in publishing and design.",
+  "title": "First Step",
+  "summary": "You need a key",
   "body": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc, eget egestas enim elit non urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p><p>Morbi non urna nec erat dictum dictum. Suspendisse potenti. Integer facilisis, nisl vel facilisis cursus, enim massa dictum libero, nec pretium ipsum urna in enim.</p>",
   "images": ["image-01.jpg", "image-02.jpg"],
   "date": "2025-06-20"
