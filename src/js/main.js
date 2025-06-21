@@ -29,10 +29,10 @@ async function renderHomePage() {
   const list = document.getElementById('articles-list');
   list.innerHTML = articles.map(article => {
     return cardTemplate
-      .replace('{{image}}', `content/articles/${article.slug}/` + (article.images[0] || ''))
-      .replace('{{title}}', article.title)
-      .replace('{{summary}}', article.summary)
-      .replace('{{slug}}', article.slug);
+      .replace(/{{image}}/g, `content/articles/${article.slug}/` + (article.images[0] || ''))
+      .replace(/{{title}}/g, article.title)
+      .replace(/{{summary}}/g, article.summary)
+      .replace(/{{slug}}/g, article.slug);
   }).join('');
 }
 
