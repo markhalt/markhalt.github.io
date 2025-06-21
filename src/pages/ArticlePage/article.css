@@ -21,10 +21,15 @@
 .split-article-full__image-side img {
   width: 100%;
   max-width: 350px;
-  max-height: 260px;
+  height: auto;
+  max-height: 220px;
   object-fit: contain;
   border-radius: 8px;
   background: #222;
+  margin-bottom: 1em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .split-article-full__text-side {
@@ -50,7 +55,7 @@
   }
   .split-article-full__image-side img {
     max-width: 100%;
-    max-height: 200px;
+    max-height: 180px;
     margin-bottom: 1em;
   }
 }
