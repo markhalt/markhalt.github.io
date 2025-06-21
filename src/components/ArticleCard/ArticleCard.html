@@ -1,9 +1,11 @@
 <!-- src/components/ArticleCard/ArticleCard.html -->
-<div class="article-card">
-  <img src="{{image}}" alt="{{title}}" class="article-card-img" />
-  <div class="article-card-content">
+<div class="split-article-card">
+  <div class="split-article-card__image-side">
+    <img src="{{image}}" alt="{{title}}" class="split-article-card__img" />
+  </div>
+  <div class="split-article-card__text-side">
     <h2>{{title}}</h2>
     <p>{{summary}}</p>
-    <a href="src/pages/ArticlePage/index.html?article={{slug}}">Read more</a>
+    <a href="src/pages/ArticlePage/index.html?article={{slug}}" class="split-article-card__link">Read more</a>
   </div>
 </div>
