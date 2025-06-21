@@ -47,7 +47,12 @@ async function renderArticlePage() {
   container.innerHTML = `
     <div class="split-article-full">
       <div class="split-article-full__image-side">
-        ${article.images.map(img => `<img src="../../content/articles/${slug}/${img}" alt="${article.title}" />`).join('')}
+        ${article.images.map(img => `
+          <img 
+            src="../../content/articles/${slug}/${img}" 
+            alt="${article.title}" 
+            loading="lazy"
+          />`).join('')}
       </div>
       <div class="split-article-full__text-side">
         <h1>${article.title}</h1>
