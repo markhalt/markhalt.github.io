@@ -7,6 +7,9 @@
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0,0,0,0.07);
   margin-bottom: 2em;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .split-article-full__image-side {
@@ -47,6 +50,7 @@
   .split-article-full {
     flex-direction: column;
     min-height: unset;
+    max-width: 100%;
   }
   .split-article-full__image-side,
   .split-article-full__text-side {
