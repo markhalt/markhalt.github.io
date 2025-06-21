@@ -2,7 +2,7 @@
 
 // Utility to fetch JSON files from articles
 async function fetchArticles() {
-  // For demo, manually list articles. For real automation, use a build step or GitHub Action to generate this list.
+  // Manually list articles for now
   const articles = [
     'content/articles/article-01/article-01.json',
     'content/articles/article-02/article-02.json'
@@ -58,10 +58,31 @@ document.addEventListener('DOMContentLoaded', async () => {
   await loadComponent('footer', 'src/components/Footer/Footer.html', 'src/components/Footer/Footer.css');
 
   // Home or Article page
-  if (document.getElementById('articles-list')) {
-    await renderHomePage();
+  // If on homepage, load HomePage content
+  if (document.getElementById('main-content')) {
+    // Load HomePage HTML into main-content
+    const homeHtml = await fetch('src/pages/HomePage/index.html').then(res => res.text());
+    document.getElementById('main-content').innerHTML = homeHtml;
+    // Load HomePage CSS
+    const homeCss = document.createElement('link');
+    homeCss.rel = 'stylesheet';
+    homeCss.href = 'src/pages/HomePage/home.css';
+    document.head.appendChild(homeCss);
+    // Render articles
+    if (document.getElementById('articles-list')) {
+      await renderHomePage();
+    }
   }
-  if (document.getElementById('article-content')) {
-    await renderArticlePage();
+  // If on article page, load ArticlePage content
+  if (window.location.pathname.endsWith('ArticlePage/index.html')) {
+    // Load ArticlePage CSS
+    const articleCss = document.createElement('link');
+    articleCss.rel = 'stylesheet';
+    articleCss.href = '../../src/pages/ArticlePage/article.css';
+    document.head.appendChild(articleCss);
+    // Render article
+    if (document.getElementById('article-content')) {
+      await renderArticlePage();
+    }
   }
 });
