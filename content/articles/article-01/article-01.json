@@ -1,0 +1,8 @@
+{
+  "slug": "welcome-to-the-modular-blog",
+  "title": "Welcome to the Modular Blog",
+  "summary": "Discover how this blog is built with a modular, automated structure using only GitHub Pages.",
+  "body": "<p>This is the <strong>first article</strong> on your modular blog. You can add more articles by creating new folders and JSON files in the <code>content/articles/</code> directory.</p><p>Images and quotes can be easily included!</p>",
+  "images": ["image-01.jpg", "image-02.jpg"],
+  "date": "2025-06-20"
+}
