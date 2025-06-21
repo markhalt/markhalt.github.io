@@ -1,8 +1,8 @@
 {
-  "slug": "welcome-to-the-modular-blog",
-  "title": "Welcome to the Modular Blog",
-  "summary": "Discover how this blog is built with a modular, automated structure using only GitHub Pages.",
-  "body": "<p>This is the <strong>first article</strong> on your modular blog. You can add more articles by creating new folders and JSON files in the <code>content/articles/</code> directory.</p><p>Images and quotes can be easily included!</p>",
+  "slug": "article-01",
+  "title": "Lorem Ipsum Dolor",
+  "summary": "An introduction to Lorem Ipsum and its use as placeholder text in publishing and design.",
+  "body": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc, eget egestas enim elit non urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p><p>Morbi non urna nec erat dictum dictum. Suspendisse potenti. Integer facilisis, nisl vel facilisis cursus, enim massa dictum libero, nec pretium ipsum urna in enim.</p>",
   "images": ["image-01.jpg", "image-02.jpg"],
   "date": "2025-06-20"
 }
