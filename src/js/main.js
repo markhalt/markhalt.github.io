@@ -28,6 +28,7 @@ async function renderHomePage() {
   const cardTemplate = await fetch('src/components/ArticleCard/ArticleCard.html').then(res => res.text());
   const list = document.getElementById('articles-list');
   list.innerHTML = articles.map(article => {
+    // Replace ALL placeholders globally
     return cardTemplate
       .replace(/{{image}}/g, `content/articles/${article.slug}/` + (article.images[0] || ''))
       .replace(/{{title}}/g, article.title)
@@ -44,10 +45,16 @@ async function renderArticlePage() {
   const article = await fetch(`../../content/articles/${slug}/${slug}.json`).then(res => res.json());
   const container = document.getElementById('article-content');
   container.innerHTML = `
-    <h1>${article.title}</h1>
-    <p><em>${article.date}</em></p>
-    ${article.images.map(img => `<img src="../../content/articles/${slug}/${img}" alt="${article.title}" />`).join('')}
-    ${article.body}
+    <div class="split-article-full">
+      <div class="split-article-full__image-side">
+        ${article.images.map(img => `<img src="../../content/articles/${slug}/${img}" alt="${article.title}" />`).join('')}
+      </div>
+      <div class="split-article-full__text-side">
+        <h1>${article.title}</h1>
+        <p><em>${article.date}</em></p>
+        ${article.body}
+      </div>
+    </div>
   `;
 }
 
@@ -56,9 +63,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   // Header & Footer
   await loadComponent('header', 'src/components/Header/Header.html', 'src/components/Header/Header.css');
   await loadComponent('footer', 'src/components/Footer/Footer.html', 'src/components/Footer/Footer.css');
-
   // Home or Article page
-  // If on homepage, load HomePage content
   if (document.getElementById('main-content')) {
     // Load HomePage HTML into main-content
     const homeHtml = await fetch('src/pages/HomePage/index.html').then(res => res.text());
