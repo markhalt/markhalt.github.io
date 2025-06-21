@@ -1,8 +1,8 @@
 {
-  "slug": "second-post",
-  "title": "Second Post: Automation in Action",
-  "summary": "See how new articles are loaded automatically on the homepage.",
-  "body": "<p>Every article you add appears on the homepage automatically. The JavaScript fetches all <code>.json</code> files in <code>content/articles/</code> and displays them as cards.</p>",
+  "slug": "article-02",
+  "title": "Sed Ut Perspiciatis",
+  "summary": "Understanding the origins and meaning of 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem.'",
+  "body": "<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p><ul><li>Nemo enim ipsam voluptatem</li><li>Ut enim ad minima veniam</li><li>Quis nostrum exercitationem ullam</li></ul><p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>",
   "images": ["image-01.jpg"],
   "date": "2025-06-21"
 }
