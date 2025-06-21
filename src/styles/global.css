@@ -1,0 +1,13 @@
+/* src/styles/global.css */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f9f9f9;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  max-width: 800px;
+  margin: auto;
+}
+main {
+  padding: 1em;
+}
