@@ -53,6 +53,8 @@ async function renderArticlePage() {
             alt="${article.title}" 
             loading="lazy"
             class="split-article-full__img"
+            width="350"
+            height="180"
           />`).join('')}
       </div>
       <div class="split-article-full__text-side">
