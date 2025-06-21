@@ -52,6 +52,7 @@ async function renderArticlePage() {
             src="../../content/articles/${slug}/${img}" 
             alt="${article.title}" 
             loading="lazy"
+            class="split-article-full__img"
           />`).join('')}
       </div>
       <div class="split-article-full__text-side">
