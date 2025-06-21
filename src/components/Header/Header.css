@@ -10,3 +10,7 @@
   margin: 0 1em;
   text-decoration: none;
 }
+.site-header a {
+  color: #fff;
+  text-decoration: none;
+}
