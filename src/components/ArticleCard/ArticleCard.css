@@ -1,0 +1,20 @@
+/* src/components/ArticleCard/ArticleCard.css */
+.article-card {
+  display: flex;
+  background: #fff;
+  border-radius: 8px;
+  margin-bottom: 1.5em;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.07);
+  overflow: hidden;
+}
+.article-card-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+.article-card-content {
+  padding: 1em;
+}
+.article-card-content h2 {
+  margin: 0 0 0.5em 0;
+}
