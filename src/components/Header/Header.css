@@ -1,0 +1,12 @@
+/* src/components/Header/Header.css */
+.site-header {
+  background: #222;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+.site-header nav a {
+  color: #fff;
+  margin: 0 1em;
+  text-decoration: none;
+}
